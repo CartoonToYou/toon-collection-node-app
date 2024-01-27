@@ -1,8 +1,17 @@
 const express = require("express");
+const url = require("url");
 
 const router = express.Router();
 
 router.get("/", (req, res) => {
+  // console.log("host: ", req.originalUrl);
+
+  const formattedUrl = url.format({
+    protocol: req.protocol,
+    host: req.get("host"),
+  });
+  console.log("formattedUrl: ", formattedUrl);
+  // console.log("req: ", req);
   // res.send(`
   //   <h1>Hello World From Express App!</h1>
   //   <button>
@@ -16,7 +25,11 @@ router.get("/", (req, res) => {
   //     </a>
   //   </button>
   // `);
-  res.render("home", { title: "Toon's Collections", pathname: "/" });
+  res.render("home", {
+    title: "Toon's Collections",
+    pathname: "/",
+    url: formattedUrl,
+  });
 });
 
 module.exports = router;

@@ -1,4 +1,5 @@
 const express = require("express");
+const url = require("url");
 
 const router = express.Router();
 
@@ -26,7 +27,17 @@ router.get("/books", (req, res) => {
 
   //   </ol>
   // `);
-  res.render("books", { title: "Books", pathname: "/books" });
+  const formattedUrl = url.format({
+    protocol: req.protocol,
+    host: req.get("host"),
+  });
+  console.log("formattedUrl: ", formattedUrl);
+
+  res.render("books", {
+    title: "Books",
+    pathname: "/books",
+    url: formattedUrl,
+  });
 });
 
 router.get("/books/:bookName", (req, res) => {

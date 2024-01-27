@@ -2,19 +2,18 @@
   <ul class="navbar__list navbar__list-left">
 
     <h2>
-      <a href="https://toon-collection-node-app-774e2cec4054.herokuapp.com/" class="navbar__brand">
+      <a href="<%= url %>" class="navbar__brand">
         My Collections
       </a>
     </h2>
 
     <li>
       <p class="text-md"><a class="<%= pathname.includes('books') ? 'navbar__link active' : 'navbar__link' %>"
-          href="https://toon-collection-node-app-774e2cec4054.herokuapp.com/books">Books</a></p>
+          href="<%= url %>/books">Books</a></p>
     </li>
     <li>
       <p class="text-md">
-        <a class="<%= pathname.includes('games') ? 'navbar__link active' : 'navbar__link' %>"
-          href=https://toon-collection-node-app-774e2cec4054.herokuapp.com/games">
+        <a class="<%= pathname.includes('games') ? 'navbar__link active' : 'navbar__link' %>" href="<%= url %>/games">
           Games
         </a>
       </p>
