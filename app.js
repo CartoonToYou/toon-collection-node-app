@@ -57,6 +57,6 @@ app.get("/book-detail", (req, res) => {
   res.send(`<h1>Book with query value ${query.author}</h1>`);
 });
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
   console.log(`First Express App listening on port ${PORT}`);
 });
