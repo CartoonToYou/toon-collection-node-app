@@ -1,0 +1,14 @@
+/* vh => viewport height */
+/* vw => viewport width */
+
+.banner {
+  width: 150px;
+  height: 100%;
+  margin: 8px 0;
+}
+
+.banner__img {
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 2px 2px 4px black;
+}

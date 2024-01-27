@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap");
+
+/* CSS Reset */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* CSS Reset */
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-md {
+  font-size: 1.25rem;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #3f00ff;
+  padding: 0 1.5rem;
+  text-shadow: 1px 1px 4px #000;
+  display: flex;
+}
+
+.navbar__brand {
+  color: #fff;
+}
+
+.navbar__list {
+  height: 4rem;
+  color: #fff;
+}
+
+.navbar__list-left {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  flex: 1;
+}
+
+.navbar__list-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__link:link,
+.navbar__link:visited {
+  color: #fff;
+  text-shadow: 1px 1px 4px #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  display: block;
+  transition: all 0.2s;
+}
+
+.navbar__link:hover,
+.navbar__link:active,
+.navbar__link.active {
+  background-color: #3dbea9;
+  box-shadow: 1px 1px 4px #dbc44125;
+  border-radius: 0.5rem;
+  transform: translateY(-1px);
+}
+
+.container {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding-top: 2rem;
+}
+
+.layout {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.card {
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 4px #3f00ff75;
+  background-color: #3dbea9;
+  padding: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.card h4 {
+  text-decoration: underline;
+}
+
+.card:hover {
+  box-shadow: 6px 6px 12px #3f00ff75;
+  transform: translate(-4px, -2px);
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-primary {
+  color: #fbeaff;
+}
+
+.text-default {
+  color: #000;
+}

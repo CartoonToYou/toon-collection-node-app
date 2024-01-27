@@ -1,0 +1,47 @@
+<%- include('layouts/head.ejs') %>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="/css/home.css">
+  </head>
+
+  <body>
+    <%- include('layouts/navigation.ejs') %>
+
+      <span class="background__images">
+        <div class="gallery">
+          <figure class="gallery__item gallery__item--1">
+            <img class="gallery__img" src="/images/minecraft-wallpaper-01.jpg" alt="minecraft_background" />
+          </figure>
+          <figure class="gallery__item gallery__item--2">
+            <img class="gallery__img" src="/images/roblox-wallpaper-01.jpg" alt="roblox_background" />
+          </figure>
+          <figure class="gallery__item gallery__item--3">
+            <img class="gallery__img" src="/images/pokemon-wallpaper-01.jpg" alt="pokemon_background" />
+          </figure>
+          <figure class="gallery__item gallery__item--4">
+            <img class="gallery__img" src="/images/hp1-cover.jpg" alt="hp1_background" />
+          </figure>
+          <figure class="gallery__item gallery__item--5">
+            <img class="gallery__img" src="/images/hp3-cover.jpg" alt="hp3_background" />
+          </figure>
+          <figure class="gallery__item gallery__item--6">
+            <img class="gallery__img" src="/images/hp4-cover.jpg" alt="hp4_background" />
+          </figure>
+        </div>
+      </span>
+
+      <main class="container">
+        <section class="hero">
+          <div class="hero__logo-container">
+            <span class="material-symbols-outlined hero__logo">
+              sports_esports
+            </span>
+            <span class="material-symbols-outlined hero__logo">
+              auto_stories
+            </span>
+          </div>
+          <h1><strong>ENJOY 'n ENHANCE</strong></h1>
+        </section>
+      </main>
+
+      <%- include('layouts/end.ejs') %>
